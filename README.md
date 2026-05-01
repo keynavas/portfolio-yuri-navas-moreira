@@ -46,11 +46,6 @@ Habilidades Socioemocionais: Pensamento analítico, comunicação clara, organiz
 | **Projeto Engenharia de Contexto e Logica Fisica** | Aplicar os conceitos de Listas, Estruturas de Repetição (for, while), Estruturas de Decisão (if/else, match-case), Funções e Operadores Complexos na resolução de problemas do mundo real, exigindo coleta de dados manual e mapeamento espacial. | [Ver Projeto](./projeto-engenharia-de-contexto-e-logica-fisica/) |
 | **Projeto Desenhando Emojis com Dados** | Manipular listas, tuplas e dicionários usando loops aninhados para criar e modificar a "arte" de um emoji. | [Ver Projeto](./projeto-desenhando-emojis-com-dados/) |
  
-#### 🤖 Inteligência Artificial
-| Projeto | Descrição | Link |
-| :--- | :--- | :---: |
-| **Predição de Churn** | o valor de um software não está apenas no que ele faz, mas em como ele foi projetado. | [Ver Projeto](./projeto-modularizacao/) |
- 
 ---
  
 ### 🏗 Estrutura do Repositório
