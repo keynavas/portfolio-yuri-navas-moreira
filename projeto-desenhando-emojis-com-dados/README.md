@@ -1,32 +1,29 @@
-# ⚖️ Sistema de Auditoria de Vendas Semanais
+# 🎨 Desenhando Emojis com Dados
 
 ## 📝 Descrição do Projeto
-Este projeto consiste em um sistema de análise de consistência de dados financeiros, desenvolvido para detectar anomalias e garantir a integridade de registros de vendas. O objetivo principal é aplicar a **Engenharia de Contexto** para identificar "outliers" (discrepâncias) que possam distorcer a realidade financeira de uma operação.
+Este projeto explora a manipulação de estruturas de dados complexas em Python, como **listas aninhadas, tuplas imutáveis e dicionários**. O objetivo é simular o processamento de imagens (filtros de brilho em pixels RGB) e a transposição de matrizes musicais.
 
-O sistema utiliza os pilares do **Pensamento Computacional** para tratar fenômenos da **Lógica Física** do mercado:
-* **Engenharia de Contexto:** O software interpreta se uma venda é legítima ou suspeita comparando-a com o comportamento médio do grupo e limites de segurança globais.
-* **Decomposição:** O processo de auditoria é dividido em: Entrada (Casting), Processamento (Média), Investigação (Anomalias) e Apresentação (Tipagem).
-* **Abstração:** Foco nos valores monetários e margens de tolerância, ignorando detalhes burocráticos para otimizar a velocidade da análise.
+Desenvolvido para consolidar o domínio sobre **loops aninhados (3 níveis)** e métodos fundamentais de coleções.
 
-## 🚀 Tecnologias Utilizadas
-* **Linguagem:** Python 3.10 (f-strings, global scope, casting de tipos)
-* **Conceitos de Engenharia:** Lógica Condicional, Escopo Global vs. Local e Detecção de Outliers.
+## 🚀 Tecnologias e Conceitos
+* **Linguagem:** Python 3.x
+* **Estruturas:** Dicionários (Mapas), Listas (Matrizes/Grades) e Tuplas (Pixels imutáveis).
+* **Algoritmos:** * Processamento de Imagem: Aplicação de filtro de sombra em valores RGB.
+    * Álgebra Linear: Transposição de matrizes 2x2 para arquivos de áudio.
 
-## 🏗️ Arquitetura e Modularização
-Seguindo o princípio **DRY (Don't Repeat Yourself)** e buscando **Alta Coesão**, o código foi estruturado para que a lógica de investigação seja independente da entrada de dados:
-* **Escopo Seguro:** Uso controlado da palavra-chave `global` para permitir que gestores ajustem parâmetros de segurança em tempo de execução.
-* **Isolamento de Funções:** A função `analisar_vendas()` atua como uma "caixa preta" que recebe os valores físicos e devolve um diagnóstico de quarentena ou revisão manual.
+## 🧩 Desafios Resolvidos
 
-## 📊 Resultados e Aprendizados
-O projeto demonstrou como a programação estruturada pode proteger sistemas contra erros humanos e fraudes:
-* **Detecção de Anomalias:** Implementação de lógica que identifica vendas 5x maiores que a média (outliers).
-* **Normalização de Dados:** Compreensão de como valores extremos podem "mentir" sobre a média e a importância de auditorias manuais.
-* **Teste de Estresse:** O sistema foi validado com cenários de alta discrepância, garantindo que o alerta de "REVISÃO MANUAL" seja disparado corretamente.
+### 1. O Criador de Emojis (Pixels RGB)
+Manipulação de uma grade 5x5 onde cada elemento é uma tupla `(R, G, B)`. O algoritmo identifica pixels amarelos e reduz seu brilho em 50%, gerando uma nova tupla para contornar a imutabilidade.
+
+### 2. Matrizes Musicais
+Processamento de uma biblioteca musical onde frequências sonoras estão organizadas em matrizes. Foi aplicada a técnica de **transposição**, invertendo linhas por colunas para alterar a melodia.
+
+### 3. Integrador (Playlist de Imagens)
+Criação de uma estrutura robusta que une metadados (Dicionários), sequências (Listas) e coordenadas fixas (Tuplas), utilizando métodos como `.update()`, `.pop()` e `.keys()`.
 
 ## 🔧 Como Executar
 1. Clone o repositório.
-2. Certifique-se de ter o Python 3.10 instalado.
-3. Execute o comando: `python auditoria_vendas.py`.
-
----
-[Voltar ao início](https://github.com/seu-usuario/seu-usuario)
+2. Execute o script principal:
+   ```bash
+   python emojis_dados.py
