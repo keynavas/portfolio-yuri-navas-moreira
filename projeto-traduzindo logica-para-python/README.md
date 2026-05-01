@@ -1,30 +1,32 @@
-# 🛠️ Laboratório de Lógica e Engenharia de Contexto
+# 🐍 Traduzindo Lógica para Python
 
-Este diretório contém uma coleção de algoritmos desenvolvidos para simular fluxos de decisão baseados em **Lógica Física** (clima, finanças) e **Engenharia de Contexto** (vendas e notas escolares).
+## 📝 Descrição do Projeto
+Este projeto consiste na transposição de algoritmos complexos de **pseudocódigo** para a linguagem **Python**. O objetivo principal é demonstrar o domínio sobre a sintaxe da linguagem, garantindo o uso correto de tipos de dados, estruturas de repetição e lógica condicional.
 
-## 🚀 Conceitos Aplicados (Dividir para Conquistar)
-Seguindo as diretrizes de **Modularização**, cada script foi desenhado para atuar como uma "unidade funcional" independente:
+Desenvolvido como parte da disciplina de **Lógica de Programação**, o sistema resolve quatro problemas distintos do mundo real, desde automação de vendas até simulações financeiras, provando a portabilidade de algoritmos entre linguagens de alto nível e modelos abstratos.
 
-* **Decomposição:** Problemas financeiros e climáticos foram quebrados em passos ordenados de entrada, processamento e saída.
-* **Alta Coesão:** Cada função possui uma responsabilidade única (ex: `analisar_clima` foca estritamente em métricas térmicas).
-* **Abstração:** Os simuladores focam apenas nos parâmetros essenciais, ignorando variáveis externas para garantir a precisão da lógica central.
+## 🚀 Tecnologias Utilizadas
+* **Linguagem:** Python 3.11
+* **Conceitos:** Casting de Dados (`float`, `int`), Estruturas de Decisão (`if/elif/else`), Repetição (`range`) e Manipulação de Strings.
+* **Ferramentas:** VS Code, IDLE ou qualquer ambiente Python 3.x.
 
-## 📂 Descrição das Funções
+## 📊 Módulos e Funcionalidades
+O sistema é composto por quatro funções principais, cada uma traduzida de um pseudocódigo técnico:
 
-1.  **Processador de Vendas:** Aplica engenharia de contexto para determinar faixas de desconto baseadas no volume financeiro.
-2.  **Analisador de Clima:** Traduz a **Lógica Física** da temperatura em alertas operacionais e médias semanais.
-3.  **Sistema de Notas:** Um integrador de desempenho acadêmico que contextualiza a média do aluno em estados de aprovação.
-4.  **Simulador de Poupança:** Algoritmo de juros compostos que modela o crescimento físico de um capital ao longo do tempo.
+* **Processamento de Vendas:** Valida estoque, calcula totais e aplica descontos progressivos (5% e 10%).
+* **Análise de Clima:** Monitora temperaturas semanais e dispara alertas de condições extremas (>45°C ou <-5°C).
+* **Gestão de Notas:** Automatiza a classificação de alunos em Aprovado, Recuperação ou Reprovado.
+* **Simulador de Poupança:** Projeta o rendimento de investimentos com aportes mensais e juros compostos.
 
----
+## 🧠 Reflexão Crítica e Aprendizados
+A transposição da lógica abstrata para uma linguagem real revelou pontos críticos sobre o funcionamento do computador:
 
-## ❓ Perguntas de Reflexão Técnica
+* **Tipagem Dinâmica:** Reforcei a necessidade do uso de `float()` e `int()` em entradas de dados, uma vez que o Python lê todo `input()` como texto (string), o que impediria cálculos matemáticos.
+* **Limites de Iteração:** Aprofundei o conhecimento na função `range()`. Diferente do pseudocódigo tradicional, o limite final do Python é exclusivo, exigindo o ajuste `range(1, n + 1)` para atingir o valor esperado.
 
-### Pergunta 1: Qual a importância da conversão de tipos no `input()`?
-**Resposta:** Quando você utiliza o comando `input()` sem converter, o Python sempre retorna uma **string** (texto). Para realizar cálculos matemáticos ou comparar grandezas (Lógica Física), é obrigatório converter esse dado para `int` (inteiro) ou `float` (decimal), caso contrário, o sistema gerará um erro de tipo.
-
-### Pergunta 2: Qual a diferença crucial entre o `PARA` do pseudocódigo e o `range()` do Python?
-**Resposta:** No pseudocódigo tradicional, a instrução `PARA m DE 1 ATE meses` geralmente inclui o valor final. No Python, a função `range(inicio, fim)` possui o **limite final exclusivo**. Isso significa que o valor de parada nunca é incluído. Por isso, para simular de 1 até o mês desejado, utilizamos `range(1, meses + 1)`.
-
----
-*Desenvolvido com foco em Código Limpo e Isolamento de Escopo.*
+## 🔧 Como Executar
+1. Clone o repositório.
+2. Certifique-se de ter o Python instalado em sua máquina.
+3. Execute o arquivo principal:
+   ```bash
+   python main.py
